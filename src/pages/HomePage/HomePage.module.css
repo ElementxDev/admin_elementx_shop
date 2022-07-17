@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background: #f0f2f5;
+}
+
+.content {
+    padding: 0 25px;
+
+}
+
+.contentHead {
+    margin-bottom: 24px 0;
+}
+
+.boxContainer {
+    width: 100%;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+}

@@ -1,0 +1,120 @@
+h4 {
+    margin: 15px auto;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+.register-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 10px auto 5px auto;
+    padding: 5px 10px;
+    color: white;
+    background-color: rgb(255, 126, 56);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-btn svg {
+    width: 30px;
+    height: 25px;
+}
+
+.register-btn:disabled {
+    cursor: not-allowed;
+}
+
+.register form {}
+
+.register-container {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(166, 166, 166);
+
+}
+
+.register-container a {
+    display: flex
+}
+
+.register-container hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid #c5cbd5;
+}
+
+.register-container small {
+    display: flex;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.register-container small a {
+    color: rgb(0, 173, 181);
+}
+
+.register-container small a:hover {
+    text-decoration: underline;
+
+}
+
+.form-control-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 250px;
+}
+
+.form-control-container label {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.form-control-container label {}
+
+.form-control-container input {
+    padding: 6px 10px;
+    border: 1px solid rgb(166, 166, 166);
+    /* box-shadow: 0 0.1rem 0.3rem rgba(0, 173, 181, 1); */
+}
+
+.form-control-container input:focus {
+    outline: none;
+}
+
+.password-error {
+    color: red;
+}
+
+.register-logo {}
+
+.register-letter-logo {
+    width: 150px;
+    height: 50px;
+}
+
+@media screen and (min-width: 720px) {
+
+    .login-form {
+        width: 296px;
+        /* height: 279px; */
+    }
+
+    .login-form-control {
+        margin: 10px auto;
+    }
+
+    .login-btn {
+        margin: 30px auto !important;
+    }
+}

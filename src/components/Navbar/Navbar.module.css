@@ -1,0 +1,30 @@
+.topbar {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: transparent;
+    color: black;
+}
+
+.topbarWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    height: 30px;
+    padding: 25px 20px;
+    box-shadow: ;
+
+
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 30px;
+}
+
+.name {
+
+    font-weight: 500;
+}
