@@ -20,7 +20,7 @@ const LoginPage = () => {
     try {
       const userResponse = await signin(user);
       if (userResponse) {
-        navigate('/products');
+        navigate('/home');
       }
     } catch (error) {
       console.log(error);
@@ -29,7 +29,7 @@ const LoginPage = () => {
   useEffect(() => {
     const verifyLogin = () => {
       if (isLoggedIn) {
-        navigate('/products');
+        navigate('/home');
       }
     };
     verifyLogin();
@@ -95,8 +95,7 @@ const LoginPage = () => {
         </form>
         <hr />
         <small>
-          ¿Eres nuevo en ElementX?
-          <Link to="/register">Crear una cuenta</Link>
+          ¿No tienes cuenta? Contacta a la adminitracion para crear una
         </small>
       </div>
     </div>

@@ -1,0 +1,43 @@
+.container {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.logo {
+    width: 250px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+form {
+    margin: 20px auto;
+}
+
+form button {
+    margin: 25px auto;
+    padding: 10px 15px;
+    cursor: pointer;
+    background: linear-gradient(195deg, rgb(102, 187, 106), rgb(67, 160, 71));
+    border: none;
+    border-radius: 5px;
+}
+
+.form_group {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.form_group input {
+    width: 250px;
+    height: 35px;
+    padding: 5px 10px;
+}
