@@ -55,7 +55,7 @@ function Sidebar() {
             </Link>
           </ul>
         </div>
-        <div className={styles.sidebarMenu}>
+        {/* <div className={styles.sidebarMenu}>
           <h3 className={styles.sidebarTitle}>Staff</h3>
           <ul className={styles.sidebarList}>
             <Link className={styles.link} to="/mange">
@@ -68,7 +68,7 @@ function Sidebar() {
               <li className={styles.sidebarListItem}>Reports</li>
             </Link>
           </ul>
-        </div>
+        </div> */}
       </div>
     </aside>
   );

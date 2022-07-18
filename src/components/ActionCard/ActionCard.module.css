@@ -1,0 +1,53 @@
+.cardContainer {
+    display: block;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    background: white;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 35px;
+    height: 100px;
+    text-align: center;
+
+}
+
+.cardHeader.pink {
+    background: linear-gradient(195deg, rgb(236, 64, 122), rgb(216, 27, 96));
+    color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 14%) 0rem 0.25rem 1.25rem 0rem, rgb(233 30 98 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;
+}
+
+.cardHeader.black {
+    background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
+    color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 14%) 0rem 0.25rem 1.25rem 0rem, rgb(64 64 64 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;
+}
+
+.cardHeader.blue {
+    background: linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232));
+    color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 14%) 0rem 0.25rem 1.25rem 0rem, rgb(0 187 212 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;
+}
+
+.iconContainer.green {
+    background: linear-gradient(195deg, rgb(102, 187, 106), rgb(67, 160, 71));
+    color: rgb(255, 255, 255);
+    border-radius: 0.75rem;
+    box-shadow: rgb(0 0 0 / 14%) 0rem 0.25rem 1.25rem 0rem, rgb(76 175 79 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}

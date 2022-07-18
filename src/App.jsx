@@ -3,12 +3,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 /*----------------IMPORT PAGE-----------------*/
 import HomePage from './pages/HomePage/HomePage';
-import ProductsPage from './pages/ProductsPage/ProductsPage';
 import RegisterPage from './pages/AuthPage/RegisterPage';
-import SalePages from './pages/SalesPage/SalePages';
-import TransactionsPage from './pages/TransactionsPage/TransactionsPage';
-import UserPage from './pages/UsersPage/UserPage';
 import LoginPage from './pages/AuthPage/LoginPage';
+import CreateProduct from './pages/CreateProduct/CreateProduct';
 /*----------------IMPORT COMPONENTS-----------------*/
 /*----------------IMPORT CONTEXT-----------------*/
 import { AuthProvider } from './context/provider/AuthContext';
@@ -23,10 +20,8 @@ function App() {
             {/* <Route path="/dashboard" element={<HomePage />} /> */}
             <Route path="/register" element={<RegisterPage />} />
             <Route path="/" element={<LoginPage />} />
-            <Route path="/products" element={<ProductsPage />} />
-            <Route path="/users" element={<UserPage />} />
-            <Route path="/transactions" element={<TransactionsPage />} />
-            <Route path="/sales" element={<SalePages />} />
+            <Route path="/home" element={<HomePage />} />
+            <Route path="/add-product" element={<CreateProduct />} />
             <Route path="*" element={<NoData />} />
           </Routes>
 
