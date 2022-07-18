@@ -30,6 +30,10 @@ body {
 
 }
 
+.title {
+  margin: 10px 15px;
+}
+
 /*----------------END PAGES GENERAL STYLES-----------------*/
 
 
@@ -43,11 +47,11 @@ body {
   margin-top: 25px;
   background: #fff;
   border-radius: .5rem;
-  overflow-x: auto;
   min-height: 100vh;
 }
 
 .table {
+
   padding: 1.25rem 1.5rem;
 }
 

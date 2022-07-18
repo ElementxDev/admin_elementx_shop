@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import TableItem from '../../components/TableItem/TableItem';
+import { useAuth } from '../../context/provider/AuthContext';
 import styles from './UserPage.module.css';
 function UserPage() {
+  const { isLoggedIn } = useAuth();
+  useEffect(() => {
+    const verifyLogin = () => {
+      if (!isLoggedIn) {
+        navigate('/');
+      }
+    };
+    verifyLogin();
+  }, []);
   return (
     <div className="container">
       <Sidebar />

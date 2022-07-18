@@ -240,7 +240,7 @@ const RegisterPage = () => {
         <hr />
         <small>
           ¿Ya tienes una cuenta?
-          <Link to="/login">Iniciar sesión</Link>
+          <Link to="/">Iniciar sesión</Link>
         </small>
       </div>
     </div>

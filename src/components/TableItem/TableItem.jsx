@@ -1,15 +1,14 @@
 import React from 'react';
 import styles from './TableItem.module.css';
-function TableItem() {
+function TableItem({ product }) {
   return (
     <tr className={styles.tr}>
-      <td className={styles.td}>300500</td>
-      <td className={styles.td}>Ryan Ray</td>
-      <td className={styles.td}>Ryan@gamil.com</td>
-      <td className={styles.td}>Si</td>
-      <td className={styles.td}>10</td>
-      <td className={styles.td}>Calle falsa 123</td>
-      <td className={styles.td}>123456789</td>
+      <td className={styles.td}>{product?._id}</td>
+      <td className={styles.td}>{product?.name}</td>
+      <td className={styles.td}>{product?.category.name}</td>
+      <td className={styles.td}>{product?.price}</td>
+      <td className={styles.td}>{product?.stock}</td>
+      <td className={styles.td}>{product?.rating}</td>
     </tr>
   );
 }

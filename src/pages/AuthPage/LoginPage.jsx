@@ -20,7 +20,7 @@ const LoginPage = () => {
     try {
       const userResponse = await signin(user);
       if (userResponse) {
-        navigate('/');
+        navigate('/products');
       }
     } catch (error) {
       console.log(error);
@@ -29,7 +29,7 @@ const LoginPage = () => {
   useEffect(() => {
     const verifyLogin = () => {
       if (isLoggedIn) {
-        navigate('/');
+        navigate('/products');
       }
     };
     verifyLogin();

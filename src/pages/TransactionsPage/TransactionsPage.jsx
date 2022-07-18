@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import Navbar from '../../components/Navbar/Navbar';
 import TableItem from '../../components/TableItem/TableItem';
-
+import { useAuth } from '../../context/provider/AuthContext';
+import getOrders from '../../services/getOrders';
 function TransactionsPage() {
+  const [order, setOrder] = useState([]);
+  const { isLoggedIn } = useAuth();
+  useEffect(() => {
+    const verifyLogin = () => {
+      if (!isLoggedIn) {
+        navigate('/');
+      }
+    };
+    const loadOrders = async () => {
+      const response = await getOrders();
+      setOrder(response);
+    };
+    verifyLogin();
+    loadOrders();
+  }, []);
   return (
     <div className="container">
       <Sidebar />

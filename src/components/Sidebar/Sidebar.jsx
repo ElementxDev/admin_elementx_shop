@@ -5,7 +5,7 @@ function Sidebar() {
   return (
     <aside className={styles.sidebar}>
       <div className={styles.sidebarWrapper}>
-        <Link to="/" className={styles.logoLink}>
+        <Link to="/products" className={styles.logoLink}>
           <img
             src="assets/ElementxOnline.svg"
             alt=""
@@ -16,14 +16,14 @@ function Sidebar() {
         <div className={styles.sidebarMenu}>
           <h3 className={styles.sidebarTitle}>Dashboard</h3>
           <ul className={styles.sidebarList}>
-            <Link to="/" className={styles.link}>
+            <Link to="/products" className={styles.link}>
               <li className={styles.sidebarListItem}>Home</li>
             </Link>
             <Link className={styles.link} to="/analytics">
-              <li className={styles.sidebarListItem}>Analytics</li>
+              <li className={styles.sidebarListItem}>Estadisticas</li>
             </Link>
             <Link className={styles.link} to="/sales">
-              <li className={styles.sidebarListItem}>Sales</li>
+              <li className={styles.sidebarListItem}>Ventas</li>
             </Link>
           </ul>
         </div>
@@ -34,27 +34,24 @@ function Sidebar() {
               <li className={styles.sidebarListItem}>Users</li>
             </Link>
             <Link className={styles.link} to="/products">
-              <li className={styles.sidebarListItem}>Products</li>
+              <li className={styles.sidebarListItem}>Productos</li>
             </Link>
             <Link className={styles.link} to="/transactions">
-              <li className={styles.sidebarListItem}>Transactions</li>
-            </Link>
-            <Link className={styles.link} to="/reports">
-              <li className={styles.sidebarListItem}>Reports</li>
+              <li className={styles.sidebarListItem}>Ordenes</li>
             </Link>
           </ul>
         </div>
         <div className={styles.sidebarMenu}>
-          <h3 className={styles.sidebarTitle}>Notifications</h3>
+          <h3 className={styles.sidebarTitle}>Agregar</h3>
           <ul className={styles.sidebarList}>
             <Link className={styles.link} to="/mail">
-              <li className={styles.sidebarListItem}>Mail</li>
+              <li className={styles.sidebarListItem}>Agregar productos</li>
             </Link>
             <Link className={styles.link} to="/feedback">
-              <li className={styles.sidebarListItem}>Feedback</li>
+              <li className={styles.sidebarListItem}>Agregar Categorias</li>
             </Link>
             <Link className={styles.link} to="/messages">
-              <li className={styles.sidebarListItem}>Messages</li>
+              <li className={styles.sidebarListItem}>Agregar Usuarios</li>
             </Link>
           </ul>
         </div>

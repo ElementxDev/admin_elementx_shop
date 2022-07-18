@@ -12,6 +12,7 @@ import LoginPage from './pages/AuthPage/LoginPage';
 /*----------------IMPORT COMPONENTS-----------------*/
 /*----------------IMPORT CONTEXT-----------------*/
 import { AuthProvider } from './context/provider/AuthContext';
+import NoData from './components/NoData/NoData';
 
 function App() {
   return (
@@ -19,14 +20,16 @@ function App() {
       <BrowserRouter>
         <AuthProvider>
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            {/* <Route path="/dashboard" element={<HomePage />} /> */}
             <Route path="/register" element={<RegisterPage />} />
-            <Route path="/login" element={<LoginPage />} />
+            <Route path="/" element={<LoginPage />} />
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/users" element={<UserPage />} />
             <Route path="/transactions" element={<TransactionsPage />} />
             <Route path="/sales" element={<SalePages />} />
+            <Route path="*" element={<NoData />} />
           </Routes>
+
           <Toaster />
         </AuthProvider>
       </BrowserRouter>
