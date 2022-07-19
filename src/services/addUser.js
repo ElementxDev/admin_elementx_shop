@@ -1,5 +1,5 @@
 import { API_URL_LOCAL, API_URL_ONLINE } from '../config';
-const ENDPOINT = `${API_URL_LOCAL}/auth/register/admin`;
+const ENDPOINT = `${API_URL_ONLINE}/auth/register/admin`;
 
 async function addUser(user) {
   return fetch(ENDPOINT, {

@@ -1,5 +1,5 @@
 import { API_URL_LOCAL, API_URL_ONLINE } from '../config';
-const ENDPOINT = `${API_URL_LOCAL}/products`;
+const ENDPOINT = `${API_URL_ONLINE}/products`;
 
 async function addProduct(product) {
   console.log(product);

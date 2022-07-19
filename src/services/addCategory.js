@@ -1,5 +1,5 @@
 import { API_URL_LOCAL, API_URL_ONLINE } from '../config';
-const ENDPOINT = `${API_URL_LOCAL}/categories`;
+const ENDPOINT = `${API_URL_ONLINE}/categories`;
 async function addCategory(category) {
   console.log(category);
   return fetch(ENDPOINT, {

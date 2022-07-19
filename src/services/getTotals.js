@@ -1,5 +1,5 @@
 import { API_URL_LOCAL, API_URL_ONLINE } from '../config';
-const ENDPOINT = `${API_URL_LOCAL}/statistics/totals`;
+const ENDPOINT = `${API_URL_ONLINE}/statistics/totals`;
 
 async function getTotals() {
   return fetch(ENDPOINT, {
