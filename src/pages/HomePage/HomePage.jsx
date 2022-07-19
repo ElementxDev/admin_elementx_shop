@@ -31,7 +31,6 @@ function HomePage() {
 
   return (
     <div className={styles.container}>
-      <Sidebar />
       <div className={styles.content}>
         <div className={styles.contentHead}>
           <Navbar />

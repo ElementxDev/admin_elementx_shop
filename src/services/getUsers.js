@@ -1,5 +1,5 @@
 import { API_URL_LOCAL, API_URL_ONLINE } from '../config';
-const ENDPOINT = `${API_URL_LOCAL}/statistics/totals`;
+const ENDPOINT = `${API_URL_ONLINE}/auth/get-all-users`;
 
 function getUsers() {
   return fetch(ENDPOINT, {

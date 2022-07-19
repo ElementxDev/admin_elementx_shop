@@ -13,6 +13,10 @@ import LoginPage from './pages/AuthPage/LoginPage';
 import CreateProduct from './pages/CreateProduct/CreateProduct';
 import CreateCategory from './pages/CreateCategory/CreateCategory';
 import CreateUser from './pages/CreateUser/CreateUser';
+import ProductPage from './pages/ProductPage/ProductPage';
+import UsersPage from './pages/UsersPage/UsersPage';
+import OrderPage from './pages/OrderPage/OrderPage';
+import SalesPage from './pages/SalesPage/SalesPage';
 
 function App() {
   return (
@@ -27,6 +31,10 @@ function App() {
             <Route path="/add-product" element={<CreateProduct />} />
             <Route path="/add-category" element={<CreateCategory />} />
             <Route path="/add-user" element={<CreateUser />} />
+            <Route path="/products" element={<ProductPage />} />
+            <Route path="/users" element={<UsersPage />} />
+            <Route path="/orders" element={<OrderPage />} />
+            <Route path="/sales" element={<SalesPage />} />
             <Route path="*" element={<NoData />} />
           </Routes>
 

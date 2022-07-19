@@ -1,22 +1,33 @@
-.topbar {
+.navbar {
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 999;
     background: transparent;
     color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+    padding-left: 15px;
+    border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 14%) 0rem 0.25rem 1.25rem 0rem, rgba(64, 64, 64, 0.11) 0rem 0.4375rem 0.625rem -0.3125rem;
+
 }
 
-.topbarWrapper {
+.hamburgerMenu {
+    padding: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navbarWrapper {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 15px;
-    height: 30px;
     padding: 25px 20px;
-    box-shadow: ;
-
-
 }
 
 .avatar {
@@ -25,6 +36,39 @@
 }
 
 .name {
-
+    cursor: pointer;
     font-weight: 500;
+    transition: .5s ease-in-out color;
+}
+
+.name:hover {
+    color: rgb(0, 173, 180);
+}
+
+.userMenu {
+    position: absolute;
+    display: none;
+    top: 70px;
+    right: 0;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 14%) 0rem 0.25rem 1.25rem 0rem, rgba(64, 64, 64, 0.11) 0rem 0.4375rem 0.625rem -0.3125rem;
+}
+
+.userMenu.active {
+    display: block;
+}
+
+.menuLink {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    transition: .5s ease-in-out color;
+}
+
+.menuLink:hover {
+    color: rgb(0, 173, 180);
 }
