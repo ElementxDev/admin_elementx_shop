@@ -1,5 +1,6 @@
 import { API_URL_LOCAL, API_URL_ONLINE } from '../config';
-const ENDPOINT = `${API_URL_ONLINE}/products`;
+/*const ENDPOINT = `${API_URL_ONLINE}/products`;*/
+const ENDPOINT = `${"mongodb+srv://elementx-admin:admin1608@cluster0.ybgln.mongodb.net/elementxbd"}/products`;
 
 async function addProduct(product) {
   console.log(product);
